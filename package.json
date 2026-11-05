@@ -1,0 +1,33 @@
+{
+  "name": "life-os-v5-web",
+  "private": true,
+  "version": "5.0.0-slice1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "vite build",
+    "verify": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0",
+    "idb-keyval": "6.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.15",
+    "@types/node": "22.20.5",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "typescript": "5.9.3",
+    "vite": "5.4.21",
+    "vite-plugin-pwa": "0.20.5",
+    "vitest": "2.1.9"
+  },
+  "engines": {
+    "node": ">=22 <23"
+  }
+}
