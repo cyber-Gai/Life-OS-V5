@@ -3,7 +3,7 @@ import { PGlite } from '@electric-sql/pglite';
 import { readFileSync, readdirSync } from 'node:fs';
 import { beforeAll, describe, expect, it } from 'vitest';
 
-const dir = new URL('../../../supabase/migrations/', import.meta.url);
+const dir = new URL('file://' + process.cwd() + '/supabase/migrations/');
 const A = '00000000-0000-4000-8000-00000000000a';
 const B = '00000000-0000-4000-8000-00000000000b';
 const op = (n: number) => `10000000-0000-4000-8000-${String(n).padStart(12, '0')}`;
