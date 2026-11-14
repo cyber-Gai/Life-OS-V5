@@ -1,0 +1,6 @@
+- name: Diagnose dependencies
+  run: |
+    npm ls @supabase/supabase-js
+    npm ls idb-keyval
+    ls -la node_modules/@supabase/
+    ls -la node_modules/idb-keyval/
